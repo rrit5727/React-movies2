@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
-function NavBar() {
+import App from "../../pages/App/App";
+
+function NavBar({user}) {
 
 
 
   return(
     <nav>
-      <Link to="/orders">Order History</Link>
-      &nbsp; | &nbsp;
-      <Link to="/orders/new">New Order</Link>
+      <Link to="/">Movies List</Link>
+      |
+      <Link to="/actors">Actors List</Link>
+      |
+      <p>UserName: {user}</p>
     </nav>
   )
 
